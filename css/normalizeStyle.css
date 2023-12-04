@@ -10,13 +10,25 @@
     display: none;
 }
 
+body{
+    font-size: 16px;
+}
+
 header {
+    width: 100%;
     display: flex;
     background-color: #ffa4b2;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
+    flex-basis: auto;
+    gap: 5%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 header img, footer img{
@@ -34,7 +46,7 @@ nav{
 
 nav ul{
     display: flex;
-    gap: 50px;
+    gap: 10%;
     justify-content: space-around;
     
 }
@@ -79,17 +91,30 @@ a:hover{
     text-align: center;
 }
 
+.bloqInfoMov{
+    display: none;
+}
+
 footer{
     display: flex;
     background-color: #ffa4b2;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 18px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    gap: 5%;
 }
 
 footer ul{
     list-style: circle;
+}
+
+footer ul li{
+    list-style: circle;
+    margin-bottom: 5px;
 }
 
 footer a{
@@ -101,6 +126,15 @@ footer a{
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
+}
+
+.bloqf a{
+    width: 50px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 5px;
 }
 
 .redes{
@@ -117,4 +151,85 @@ footer a{
 
 .bloqf p{
     align-self: baseline;
+}
+
+.twitter:hover{
+    background-color: #55acee;
+}
+
+.facebook:hover{
+    background-color: #3b5998;
+}
+
+.tiktok:hover{
+    background-color: #0f0f14;
+    text-shadow: 1px 3px #c0045c;
+}
+
+.instagram:hover{
+    background-image: linear-gradient(#c0045c, yellow);
+}
+
+@media(max-width:1000px){
+
+    header nav{
+        display: none;
+    }
+
+    #burguir{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: none;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    .hamburguesa i{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .registro{
+        width: 30px;
+        height: 100%;
+    }
+
+    .bloqInfo, footer ul, .registro a{
+        display: none;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .bloqInfoMov{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .bloqf{
+        display: flex;
+        text-align: center;
+    }
+
+
+    .iconos{
+        justify-content: center;
+    }
+
+
+
 }
