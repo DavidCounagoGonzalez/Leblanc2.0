@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <script src="scripts/hamburgerMenu.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3b3463635.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/comunStyle.css">
     <link rel="stylesheet" href="css/InicioStyle.css">
+    <link rel="stylesheet" href="css/burguirStyle.css">
+    <script src="scripts/burguir.js"></script>
 </head>
 
 <body>
     <header>
         <div id="burguir">
-            <a href="javascript:void(0);" class="hamburguesa" onclick="showHamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <button class="hamburguesa">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+            <ul class="desplegable">
+                <a href="#" class="itemMenu"><li>Inicio</li></a>
+                <a href="#" class="itemMenu"><li>Nosotros</li></a>
+                <a href="#" class="itemMenu"><li>Servicios</li></a>
+                <a href="#" class="itemMenu"><li>Comprar</li></a>
+                <a href="#" class="itemMenu"><li>Contacto</li></a>
+            </ul>
         </div>
         <img src="img/LogoPast-removebg-preview.png" alt="logoLeblanc">
         <nav>

@@ -32,6 +32,7 @@ article{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 5%;
 }
 
@@ -50,9 +51,10 @@ article .texto h2{
 }
 
 article .texto p{
-    margin-top: 10%;
+    margin: 16px 6%;
+
 }
 article img{
     width: 40%;
-    height: 300px;
+    height: 400px;
 }

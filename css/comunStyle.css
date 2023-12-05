@@ -10,9 +10,19 @@
     display: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
 body{
     font-size: 16px;
     background-color: #fdd4da;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
 }
 
 header {
@@ -185,25 +195,17 @@ footer a{
         display: none;
     }
 
-    #burguir{
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: none;
-        transition: all 0.3s ease-in-out;
-        text-align: center;
-    }
-
-    .hamburguesa i{
-        font-size: 30px;
-        text-align: center;
-        margin-top: 10px;
-    }
-
     header{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    #burguir{
+        display: block;
+        align-items: center;
+        width: 40px;
+        height: 40px;
     }
 
     .registro{
