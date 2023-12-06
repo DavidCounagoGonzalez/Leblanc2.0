@@ -11,7 +11,7 @@ function inicio(){
         let porcentaje = index * -100;
         slider.style.transform = "translateX(" + porcentaje + "%)";
         index++;
-        if(index >= imagenes.length){
+        if(index > (imagenes.length -1)){
             index = 0;
         }
     }, 5000)
