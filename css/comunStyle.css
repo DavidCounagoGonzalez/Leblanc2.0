@@ -17,7 +17,7 @@ body{
     font-size: 16px;
     background-color: #fdd4da;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500px;
+    font-weight: 600;
 }
 
 h2 {
@@ -35,6 +35,8 @@ header {
     font-size: 18px;
     flex-basis: auto;
     gap: 5%;
+    position: relative;
+    z-index: 10;
 }
 
 header a{
@@ -217,7 +219,7 @@ footer a{
         position: absolute;
         top: 0;
         left: 40%;
-        height: 60%;
+        height: 400px;
         background-color: #ffd2a9;
         padding: 4rem;
         box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .4);
