@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,19 +9,16 @@
     box-sizing: border-box;
 }
 
-#burguir{
+.abrir-menu, .cerrar-menu{
     display: none;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
 
 body{
     font-size: 16px;
     background-color: #fdd4da;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
 
 h2 {
     font-family: 'Dancing Script', cursive;
@@ -38,8 +38,9 @@ header {
 }
 
 header a{
+    color: #ff65be;
     text-decoration: none;
-    color: white;
+    font-weight: bold;
 }
 
 header img, footer img{
@@ -68,13 +69,10 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
     text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;
-}
+
 
 .registro{
     display: flex;
@@ -87,7 +85,6 @@ a:hover{
 
 .registro a{
     text-decoration: none;
-    color: white;
 }
 
 .registro i{
@@ -100,6 +97,10 @@ a:hover{
     height: 30px;
     width: 30px;
     text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .bloqInfoMov{
@@ -138,7 +139,8 @@ footer ul li{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: #ff65be;
+    font-weight: bold;
 }
 .bloqf{
     display: flex;
@@ -154,6 +156,7 @@ footer a{
     line-height: 50px;
     font-size: 30px;
     border-radius: 5px;
+    color: white;
 }
 
 .redes{
@@ -191,32 +194,54 @@ footer a{
 
 @media(max-width:1000px){
 
-    header nav{
-        display: none;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #burguir{
+    .abrir-menu , .cerrar-menu{
         display: block;
-        align-items: center;
-        width: 40px;
-        height: 40px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
     }
 
-    .registro{
-        width: 30px;
-        height: 100%;
+
+    nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        height: 60%;
+        background-color: #ffd2a9;
+        padding: 4rem;
+        box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .4);
+    }
+
+    nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
     }
 
     .bloqInfo, footer ul, .registro a{
         display: none;
     }
 
+    footer p{
+        color: black;
+        font-weight: bold;
+    }
 
     footer{
         display: flex;
