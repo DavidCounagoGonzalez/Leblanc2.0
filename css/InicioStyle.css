@@ -43,16 +43,16 @@ article{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 5%;
     width: 100%;
+    padding: 5%;
 }
 
 article .texto{
     background-color: #ffa4b2;
     opacity: 0.9;
     width: 50%;
-    min-width: 450px;
-    height: 300px;
+    min-width: 350px;
+    height: max-content;
     border: 2px solid #ff65be;
     align-content: center;
     text-align: center;
@@ -71,9 +71,9 @@ article .texto p{
 }
 article img{
     width: 40%;
-    height: 450px;
+    height: auto;
     border: 2px solid #ff65be;
-    min-width: 450px;
+    min-width: 350px;
 }
 
 @media screen and (max-width:1000px) {
@@ -85,10 +85,17 @@ article img{
     article{
         width: 100%;
         height: auto;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    article .texto{
+        width: 350px;
     }
 
     article img{
         border-top: none;
+        width: 350px;
     }
 
     section article:nth-child(2){
