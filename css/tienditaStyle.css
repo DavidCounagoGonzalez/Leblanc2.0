@@ -120,6 +120,10 @@
         height: 30px;
     }
 
+    .abrir-filtro:hover, .cerrar-filtro:hover{
+        cursor: pointer;
+    }
+
     .despFiltros{
         opacity: 0;
         visibility: hidden;
@@ -131,7 +135,7 @@
         align-items: center;
         gap: 2rem;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 0;
         height: 400px;
         width: 100%;
@@ -157,6 +161,10 @@
         color: #ff65be;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    .despFiltros ul a:hover{
+        text-decoration: underline;
     }
 
 
