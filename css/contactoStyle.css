@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding: 3%;
+    color: #ff65be;
+    background-color: #ffd2a9;
+    border-top: 10px dotted #fff0a4;
+}
+
+.faq{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+.faq_titulo{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    text-align: center;
+}
+
+.pregunta{
+    margin: 10px;
+    max-width: 500px;
+    border: 2px solid #ff65be;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #ffa4b2;
+}
+
+.pregunta_titulo h3:hover{
+    cursor: pointer;
+}
+
+.respuesta{
+    display: none;
+    opacity: 0;
+}
+
+.respuesta.activo{
+    display: block;
+    opacity: 1;
+}
+
+.consultas{
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.preconsulta{
+    border: 2px solid #ff65be;
+    width: 50%;
+    padding: 70px 50px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contForm{
+    background-color: #ffa4b2;
+    border: 2px solid #ff65be;
+    border-left: none;
+    width: 50%;
+    padding: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form input{
+    height: 30px;
+    padding: 8px 18px;
+}
+
+textarea
+{
+  width: 100%;
+  padding: 8px 18px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 100px;
+  min-height: 50px;
+}
+
+.enviar{
+    width: 40%;
+    height: 40px;
+    border-radius: 60px;
+    background-color: #ffd2a9;
+    margin-top: 15px;
+}
+
+.enviar:hover{
+    cursor: pointer;
+}
+
+.enviar:active{
+    scale: 0.95;
+    background-color: #fff0a4;
+}
+
+.trabajo{
+    background-color: #ffa4b2;
+    border: 2px solid #ff65be;
+    height: max-content;
+    margin: 10px 20px;
+    text-align: center;
+    padding: 2% 22%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trabajo a{
+    text-decoration: none;
+    color: black;
+}
+
+.trabajo a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+    
+
+    .faq{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pregunta{
+        width: 100%;
+    }
+
+    .consultas{
+        flex-direction: column;
+    }
+
+    .contForm, .preconsulta{
+        width: 100%;
+    }
+
+    .contForm{
+        border-left: 2px solid #ff65be;
+    }
+}
+
