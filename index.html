@@ -7,10 +7,12 @@
     <title>Inicio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3b3463635.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/comunStyle.css">
     <link rel="stylesheet" href="css/InicioStyle.css">
     <script src="scripts/burguir.js"></script>
-    <script src="scripts/carrousel.js"></script>
+    <!-- <script src="scripts/carrousel.js"></script> -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -28,42 +30,68 @@
             </ul>
         </nav>
         <div class="registro">
-            <a href="#"><p>Acceder/Registrar</p></a>
+            <a href="#">
+                <p>Acceder/Registrar</p>
+            </a>
             <div class="perfil">
                 <i class="fa-regular fa-user"></i>
             </div>
         </div>
     </header>
     <main>
-        <section class="slider">
-            <div class="slider--inner">
-                <img src="img/navidad.jpg" alt="Grande">
-                <img src="img/tartazanahoria.jpg" alt="Knekro">
-                <img src="img/cupcakes.jpg" alt="El Ninja">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/navidad.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tartazanahoria.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cupcakes.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <section class="contenido">
             <article class="leblanc">
                 <div class="texto">
                     <h2>Nuestra pastelería</h2>
                     <p>
-                    En Leblanc, nos enorgullece ofrecer un rincón lleno de dulces encantos para todos.
-                    Desde nuestras tartas caseras que evocan recuerdos de la infancia
-                    hasta galletas artesanales que te transportarán a un mundo de delicias,
-                    en nuestra pastelería nos esforzamos por crear momentos especiales con cada bocado.
+                        En Leblanc, nos enorgullece ofrecer un rincón lleno de dulces encantos para todos.
+                        Desde nuestras tartas caseras que evocan recuerdos de la infancia
+                        hasta galletas artesanales que te transportarán a un mundo de delicias,
+                        en nuestra pastelería nos esforzamos por crear momentos especiales con cada bocado.
                     </p>
                 </div>
-                <img src="img/EntradaPastelería.jpg" alt="Imagen Productos">        
+                <img src="img/EntradaPastelería.jpg" alt="Imagen Productos">
             </article>
             <article class="servicios">
-                <img src="img/PastelBodas.jpg" alt="Imagen Productos">           
+                <img src="img/PastelBodas.jpg" alt="Imagen Productos">
                 <div class="texto">
                     <h2>Servicios</h2>
                     <p>
-                    Lo primero y más importante para nosotros es el cliente.
-                    Buscamos vuestra satisfacción tanto con nuestro producto como atención,
-                    por ello estamos encantados de poder ofrecer diversos servicios
-                    desde pedidos a lo grande para celebraciones, hasta tartas para bodas.
+                        Lo primero y más importante para nosotros es el cliente.
+                        Buscamos vuestra satisfacción tanto con nuestro producto como atención,
+                        por ello estamos encantados de poder ofrecer diversos servicios
+                        desde pedidos a lo grande para celebraciones, hasta tartas para bodas.
                     </p>
                 </div>
             </article>
@@ -71,9 +99,9 @@
                 <div class="texto">
                     <h2>Productos</h2>
                     <p>En Leblanc podeis disfutrar de una gran variedad de productos que
-                    endulzarán vuestro día. En nuestra carta podreis encontrar dulces
-                    para todos los gustos desde los más chocolateros hasta los que buscan nuevas sensaciones.
-                    Como se que te han entrado ganas aquí la tienes - <a href="#">CartaLeblanc</a>
+                        endulzarán vuestro día. En nuestra carta podreis encontrar dulces
+                        para todos los gustos desde los más chocolateros hasta los que buscan nuevas sensaciones.
+                        Como se que te han entrado ganas aquí la tienes - <a href="#">CartaLeblanc</a>
                     </p>
                 </div>
                 <img src="img/Mostrador.jpg" alt="Imagen Productos">
