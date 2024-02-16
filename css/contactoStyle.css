@@ -1,11 +1,20 @@
+* h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .banner{
     width: 100%;
     height: max-content;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     color: #ff65be;
     background-color: #ffd2a9;
     border-top: 10px dotted #fff0a4;
+}
+
+.banner h1{
+    font-weight: bold;
 }
 
 .faq{
@@ -23,6 +32,11 @@
     text-align: center;
 }
 
+.faq_titulo h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .pregunta{
     margin: 10px;
     max-width: 100%;
@@ -32,8 +46,13 @@
     background-color: #ffa4b2;
 }
 
-.pregunta_titulo h3:hover{
+.accordion-header:hover{
     cursor: pointer;
+}
+
+.accordion-button{
+    font-size: 0.75em;
+    font-weight: bold;
 }
 
 .respuesta{

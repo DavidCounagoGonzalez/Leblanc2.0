@@ -36,6 +36,10 @@
     object-fit: fill;
 }
 
+.carousel-control-prev-icon{
+    color: #ff65be;
+}
+
 .contenido{
     display: flex;
     flex-direction: column;
