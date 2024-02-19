@@ -85,6 +85,38 @@ article img{
     min-width: 350px;
 }
 
+.semanal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.videoSem{
+    background-color: #ffa4b2;
+    opacity: 0.9;
+    width: 70%;
+    min-width: 350px;
+    height: max-content;
+    border: 2px solid #ff65be;
+    align-content: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.semanal h2{
+    font-size: 3em;
+}
+
+.semanal video{
+    width: 100%;
+    height: auto;
+    min-width: 325px;
+}
+
 @media screen and (max-width:1000px) {
 
     section{
