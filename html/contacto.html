@@ -34,7 +34,7 @@
                 <p>Acceder/Registrar</p>
             </a>
             <div class="perfil">
-                <a href="#" class="iconHead">
+                <a href="#" class="iconHead" title="Icono Usuario">
                     <i class="fa-regular fa-user"></i>
                 </a>
             </div>
@@ -141,10 +141,10 @@
             </div>
             <div class="contForm">
                 <form>
-                    <input type="text" placeholder="Nombre Completo" required>
-                    <input type="text" placeholder="Email" required>
-                    <input type="text" placeholder="Teléfono" required>
-                    <textarea placeholder="Cuéntanos!!" required></textarea>
+                    <label for="nombre">Nombre completo:</label><input id="nombre" type="text" placeholder="Nombre Completo" required>
+                    <label for="email">Email:</label><input id="email" type="text" placeholder="Email" required>
+                    <label for="telefono">Teléfono:</label><input id="telefono" type="text" placeholder="Teléfono" required>
+                    <label for="cuentanos">Tu consulta:</label><textarea id="cuentanos" placeholder="Cuéntanos!!" required></textarea>
                     <input type="submit" name="Enviar" class="enviar" value="Enviar">
                 </form>
             </div>
@@ -195,10 +195,10 @@
             <div class="redes">
                 <p>Redes:</p>
                 <div class="iconos">
-                    <a class="twitter" href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a class="facebook" href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="tiktok" href="www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-                    <a class="instagram" href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="twitter" href="www.twitter.com" title="Twitter"><i class="fa-brands fa-x-twitter" role="Twitter"></i></a>
+                    <a class="facebook" href="www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook" role="Facebook"></i></a>
+                    <a class="tiktok" href="www.tiktok.com" title="TikTok"><i class="fa-brands fa-tiktok" role="tiktok"></i></a>
+                    <a class="instagram" href="www.instagram.com" title="Instragram"><i class="fa-brands fa-instagram" role="Instragram"></i></a>
                 </div>
             </div>
             <p>@2023 LeBlanc. Todos los derechos reservados</p>

@@ -96,19 +96,19 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 }
 
 form input{
     height: 30px;
     padding: 8px 18px;
+    margin-bottom: 10px;
 }
 
 textarea
 {
   width: 100%;
   padding: 8px 18px;
-  margin: 9px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 3px;
