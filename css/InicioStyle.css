@@ -1,5 +1,10 @@
+.container{
+    margin-top: 10px;
+    width: auto;
+}
 .carousel-inner {
-    height: 1000px;
+    height: 100%;
+    width: 100%;
 }
 
 .carousel-item img{
@@ -11,8 +16,14 @@
     object-fit: fill;
 }
 
-.carousel-control-prev-icon{
-    color: #ff65be;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: #ff65be;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #ff65be;
 }
 
 .contenido{
