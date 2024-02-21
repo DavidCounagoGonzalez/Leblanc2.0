@@ -57,31 +57,26 @@ header img, footer img{
     min-height: 100px;
 }
 
-.container-fluid{
-    width: 1600px;
-    margin: 0;
-}
-
-.collapse{
+nav{
     display: flex;
     justify-content: space-between;
     height: 40%;
 
 }
 
-.collapse ul{
+nav ul{
     display: flex;
     gap: 10%;
     justify-content: space-around;
     
 }
 
-.collapse ul li{
+nav ul li{
     list-style: none;
     display: inline-block;
 }
 
-.collapse ul li a{
+nav ul li a{
     text-decoration: none;
 }
 
