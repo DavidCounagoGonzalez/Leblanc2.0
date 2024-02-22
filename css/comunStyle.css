@@ -57,6 +57,39 @@ header img, footer img{
     min-height: 100px;
 }
 
+.logoHeader{
+    animation-duration: 2s;
+    animation-name: logo;
+}
+
+@keyframes logo {
+    from {
+        margin-top: -200px;
+        rotate: 45deg;
+    }
+    10%{
+        margin-bottom: 10px;
+    }
+    65%{
+        rotate: 30deg;
+    }
+    68%{
+        rotate: 20deg;
+    }
+    70%{
+        rotate: -30deg;
+    }
+    75%{
+        rotate: -10deg;
+    }
+    85%{
+        rotate: 10deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -68,7 +101,8 @@ nav ul{
     display: flex;
     gap: 10%;
     justify-content: space-around;
-    
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
 nav ul li{
@@ -93,6 +127,7 @@ nav ul li a{
 
 .registro a{
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .registro i{

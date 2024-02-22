@@ -40,6 +40,25 @@ article{
     align-items: center;
     width: 100%;
     padding: 5%;
+    animation-duration: 3s;
+    animation-name: entradaArticles;
+}
+@keyframes entradaArticles {
+    from {
+        margin-left: -200px;
+    }
+    70%{
+        margin-left: 10%;
+    }
+    90%{
+        margin-left: -10px;
+    }
+    95%{
+        margin-left: 20px;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 article .texto{
