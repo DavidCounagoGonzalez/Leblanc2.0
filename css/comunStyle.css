@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400..700&family=Open+Sans:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -44,10 +44,10 @@ header {
     z-index: 10;
 }
 
-header a{
+header a, footer a{
     color: #ff65be;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 header img, footer img{
@@ -184,11 +184,6 @@ footer ul li{
     margin-bottom: 5px;
 }
 
-footer a{
-    text-decoration: none;
-    color: #ff65be;
-    font-weight: bold;
-}
 .bloqf{
     display: flex;
     flex-direction: column;
@@ -203,7 +198,7 @@ footer a{
     line-height: 50px;
     font-size: 30px;
     border-radius: 5px;
-    color: white;
+    color: black;
 }
 
 .redes{
@@ -231,8 +226,8 @@ footer a{
 }
 
 .tiktok:hover{
-    background-color: #0f0f14;
-    text-shadow: 1px 3px #c0045c;
+    background-color: black;
+    text-shadow: 1px 3px #c0045c, -1px -2.5px #00f2ea;
 }
 
 .instagram:hover{
