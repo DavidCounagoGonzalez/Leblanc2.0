@@ -44,11 +44,11 @@
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                        class="active" aria-current="true" aria-label="Noticia uno"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                        aria-label="Noticia 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="Noticia 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -113,7 +113,10 @@
             <div class="videoSem">
                 <h2>Receta de la Semana</h2>
                 <h3>Cosa de cosas</h3>
-                <video controls src="img/Abeja.webm" alt="Video de la receta Semanal"></video>
+                <video controls  alt="Video de la receta Semanal">
+                    <source src="img/Abeja.webm" type="video/webm">
+                    <source src="img/Abeja.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
     </main>
