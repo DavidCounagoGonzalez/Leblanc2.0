@@ -65,28 +65,25 @@ header img, footer img{
 @keyframes logo {
     from {
         margin-top: -200px;
-        rotate: 45deg;
+        transform: rotate(45deg);
     }
     10%{
         margin-bottom: 10px;
     }
     65%{
-        rotate: 30deg;
+        transform: rotate(30deg);
     }
     68%{
-        rotate: 20deg;
+        transform: rotate(20deg);
     }
     70%{
-        rotate: -30deg;
+        transform: rotate(-30deg);
     }
     75%{
-        rotate: -10deg;
+        transform: rotate(-10deg);
     }
     85%{
-        rotate: 10deg;
-    }
-    to{
-        rotate: 0deg;
+        transform: rotate(10deg);
     }
 }
 
