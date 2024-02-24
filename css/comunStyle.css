@@ -35,7 +35,7 @@ header {
     display: flex;
     background-color: #ffd2a9;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 18px;
     flex-basis: auto;
@@ -52,7 +52,7 @@ header a, footer a{
 
 header img, footer img{
     height: 150px;
-    width: 250px;
+    width: 225px;
     min-width: 200px;
     min-height: 100px;
 }
